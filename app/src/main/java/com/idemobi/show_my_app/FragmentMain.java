@@ -16,7 +16,7 @@ public class FragmentMain extends Fragment {
                              Bundle savedInstanceState) {
         View tRootView = inflater.inflate(R.layout.fragment_main, container, false);
 
-        Button tButton = tRootView.findViewById(R.id.button);
+        Button tButton = tRootView.findViewById(R.id.buttonShare);
         tButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
