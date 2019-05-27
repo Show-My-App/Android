@@ -105,6 +105,8 @@ class DownloaderHelper {
             String tIPadAppID = sBundle.getString(Consts.IPAD_APP_ID, "");
             String tMacAppID = sBundle.getString(Consts.MAC_APP_ID, "");
             String tAndroidAppID = sBundle.getString(Consts.ANDROID_APP_ID, "");
+            String tTabletAppID = sBundle.getString(Consts.TABLET_APP_ID, "");
+            String tTvAppID = sBundle.getString(Consts.TV_APP_ID, "");
             int tStyleLink = sBundle.getInt(Consts.STYLE_LINK, 0);
             _IsTinyLink = sBundle.getBoolean(Consts.TINY_LINK, false);
 
@@ -122,6 +124,12 @@ class DownloaderHelper {
             }
             if (!tAndroidAppID.isEmpty()) {
                 tParams.add(Consts.TAG_ANDROID_APP_ID.concat(tAndroidAppID));
+            }
+            if (!tTabletAppID.isEmpty()) {
+                tParams.add(Consts.TAG_TABLET_APP_ID.concat(tTabletAppID));
+            }
+            if (!tTvAppID.isEmpty()) {
+                tParams.add(Consts.TAG_TV_APP_ID.concat(tTvAppID));
             }
             tParams.add(Consts.TAG_STYLE_LINK.concat("" + tStyleLink));
             if (_IsTinyLink && !sRemoveTinyLink) {

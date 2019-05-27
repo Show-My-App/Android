@@ -17,6 +17,8 @@ final class Consts  {
     static final String IPAD_APP_ID = "_IPadAppID";
     static final String MAC_APP_ID = "_MacAppID";
     static final String ANDROID_APP_ID = "_AndroidAppID";
+    static final String TABLET_APP_ID = "_TabletAppID";
+    static final String TV_APP_ID = "_TvOSAppID";
     static final String STYLE_LINK = "_Design";
     static final String TINY_LINK = "_TinyLink";
 
@@ -30,9 +32,9 @@ final class Consts  {
     static final String TAG_IOS_APP_ID = "a=";
     static final String TAG_IPAD_APP_ID = "b=";
     static final String TAG_MAC_APP_ID = "m=";
-    static final String tvOS_BundleID = "v=";
+    static final String TAG_TV_APP_ID = "v=";
 
     static final String TAG_ANDROID_APP_ID = "g=";
-    static final String android_Tablet_BundleID = "h=";
+    static final String TAG_TABLET_APP_ID = "h=";
     ////////////////////////////////////////////////////////////////////////////////////////////////
 }

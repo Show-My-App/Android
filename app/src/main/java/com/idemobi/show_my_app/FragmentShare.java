@@ -16,7 +16,6 @@ public class FragmentShare extends Fragment implements View.OnClickListener {
 
     private static final String TAG = "FragmentTest";
     private String _Params = "";
-    //private Boolean _IsTinyLink = false;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

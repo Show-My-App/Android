@@ -18,6 +18,8 @@ public class FragmentSetting extends Fragment {
     public EditText _IPadAppID;
     public EditText _MacAppID;
     public EditText _AndroidAppID;
+    public EditText _TabletAppID;
+    public EditText _TvOSAppID;
     public RadioGroup _StyleLink;
     public Switch _TinyLink;
 
@@ -30,6 +32,8 @@ public class FragmentSetting extends Fragment {
         _IPadAppID = tRootView.findViewById(R.id.editTextIPadAppID);
         _MacAppID = tRootView.findViewById(R.id.editTextMacAppID);
         _AndroidAppID = tRootView.findViewById(R.id.editTextAndroidAppID);
+        _TabletAppID = tRootView.findViewById(R.id.editTextTabletAppID);
+        _TvOSAppID = tRootView.findViewById(R.id.editTextTVAppID);
         _StyleLink = tRootView.findViewById(R.id.radioStyle);
         _TinyLink = tRootView.findViewById(R.id.switchTinyLink);
 
@@ -87,6 +91,8 @@ public class FragmentSetting extends Fragment {
         rBundle.putString(Consts.IPAD_APP_ID, _IPadAppID.getText().toString());
         rBundle.putString(Consts.MAC_APP_ID, _MacAppID.getText().toString());
         rBundle.putString(Consts.ANDROID_APP_ID, _AndroidAppID.getText().toString());
+        rBundle.putString(Consts.TABLET_APP_ID, _TabletAppID.getText().toString());
+        rBundle.putString(Consts.TV_APP_ID, _TvOSAppID.getText().toString());
         rBundle.putBoolean(Consts.TINY_LINK, _TinyLink.isChecked());
 
         int tID =_StyleLink.getCheckedRadioButtonId();
